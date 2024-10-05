@@ -1,5 +1,7 @@
 """ Create and work with the student class"""
 import sqlite3
+import pandas as pd
+import numpy as np
 #db_path
 tables = ['students', 'courses', 'assignments', 'enrollments']
 
@@ -11,7 +13,7 @@ class student:
         self.uid - st['uid']
         self.first_name = st['first_name']
         self.last_name = st['last_name']
-        self.email = st['email']
+        self.email = st['email'] 
         self.accomadations = st['accomadations']
         self.notes = st['notes']
         self.courses = []
